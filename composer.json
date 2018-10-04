@@ -1,0 +1,22 @@
+{
+	"name": "able/exceptions",
+	"type": "library",
+	"keywords": ["phpable", "facade"],
+	"description": "phpABLE exceptions library",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Kassius Kress",
+			"email": "hacpaka@kamora.vn"
+		}
+	],
+	"require": {
+		"php": ">=7.4.0",
+		"able/fixes": "dev-master"
+	},
+	"autoload": {
+		"psr-4": {
+			"Able\\Exceptions\\": "src/"
+		}
+	}
+}
