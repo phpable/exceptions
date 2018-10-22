@@ -12,7 +12,7 @@ class EInvalidArgument extends AException {
 	/**
 	 * @var string
 	 */
-	protected static string $template = "|%s|%s|";
+	protected static string $template = "Invalid argument: %s!";
 
 	/**
 	 * @param string $name
