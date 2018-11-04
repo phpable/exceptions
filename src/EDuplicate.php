@@ -6,12 +6,12 @@ use \Able\Helpers\Arr;
 
 use \Throwable;
 
-class EInvalid extends AException {
+class EDuplicate extends AException {
 
 	/**
 	 * @var string
 	 */
-	protected static string $template = "Invalid value: %s!";
+	protected static string $template = "The value is duplicate: %s!";
 
 	/**
 	 * @param string $name
