@@ -12,7 +12,8 @@
 	],
 	"require": {
 		"php": ">=7.4.0",
-		"able/fixes": "dev-master"
+		"able/fixes": "dev-master",
+		"able/prototypes": "dev-master"
 	},
 	"autoload": {
 		"psr-4": {
