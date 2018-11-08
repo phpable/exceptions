@@ -11,7 +11,7 @@ class EOverflow extends AException {
 	/**
 	 * @var string
 	 */
-	protected static string $template = "The vaalue is out of range: %s!";
+	protected static string $template = "The value is out of range: %s!";
 
 	/**
 	 * @param string $name
