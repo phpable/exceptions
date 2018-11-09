@@ -6,7 +6,7 @@ use \Able\Helpers\Arr;
 
 use \Throwable;
 
-class EMismatched extends AException {
+class EOveflow extends AException {
 
 	/**
 	 * @var string

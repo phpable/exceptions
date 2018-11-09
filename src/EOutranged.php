@@ -6,7 +6,7 @@ use \Able\Helpers\Arr;
 
 use \Throwable;
 
-class EOverflow extends AException {
+class EOutranged extends AException {
 
 	/**
 	 * @var string
