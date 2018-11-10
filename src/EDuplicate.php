@@ -2,9 +2,6 @@
 namespace Able\Exceptions;
 
 use \Able\Exceptions\Abstractions\AException;
-use \Able\Helpers\Arr;
-
-use \Throwable;
 
 class EDuplicate extends AException {
 
