@@ -2,8 +2,9 @@
 The phpABLE exceptions library. 
 
 ## Requirements
-* PHP >= 7.4.0
+* PHP >= 8.0.0
 * [able/fixes](https://github.com/phpable/fixes)
+* [able/prototypes](https://github.com/phpable/prototypes)
 
 
 ## Install

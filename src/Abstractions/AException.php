@@ -5,8 +5,9 @@ use \Able\Prototypes\IStringable;
 use \Able\Prototypes\TStringable;
 
 use \Throwable;
+use \Exception;
 
-abstract class AException extends \Exception
+abstract class AException extends Exception
 	implements IStringable {
 
 	use TStringable;
@@ -24,7 +25,7 @@ abstract class AException extends \Exception
 	/**
 	 * @param Throwable $Previous
 	 */
-	protected final function registerPrevious(\Throwable $Previous): void {
+	protected final function registerPrevious(Throwable $Previous): void {
 		$this->Previous = $Previous;
 	}
 
@@ -38,7 +39,7 @@ abstract class AException extends \Exception
 					$this->registerPrevious($_);
 
 					/**
-					 *  The argument list can contain a previously
+					 *  The argument list can also contain a previously
 					 *  caught exception.
 					 *
 					 * @attention The only last one given exception will be added in a trace!
@@ -52,6 +53,7 @@ abstract class AException extends \Exception
 
 	/**
 	 * @return string
+	 * @throws Exception
 	 */
 	public final function toString(): string {
 		return parent::__toString();

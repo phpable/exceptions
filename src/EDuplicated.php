@@ -4,12 +4,12 @@ namespace Able\Exceptions;
 use \Able\Exceptions\Abstractions\AException;
 use \Throwable;
 
-class EDuplicate extends AException {
+class EDuplicated extends AException {
 
 	/**
 	 * @var string
 	 */
-	protected static string $template = "The value is duplicate: %s!";
+	protected static string $template = "The value is duplicated: %s!";
 
 	/**
 	 * @param string $name

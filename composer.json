@@ -1,7 +1,7 @@
 {
 	"name": "able/exceptions",
 	"type": "library",
-	"keywords": ["phpable", "facade"],
+	"keywords": ["phpable", "exceptions"],
 	"description": "phpABLE exceptions library",
 	"license": "MIT",
 	"authors": [
@@ -11,9 +11,9 @@
 		}
 	],
 	"require": {
-		"php": ">=7.4.0",
-		"able/fixes": "dev-master",
-		"able/prototypes": "dev-master"
+		"php": ">=8.0.0",
+		"able/fixes": "^v1.0.0",
+		"able/prototypes": "^v1.1.0"
 	},
 	"autoload": {
 		"psr-4": {
