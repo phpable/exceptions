@@ -1,16 +1,10 @@
 <?php
 namespace Able\Exceptions\Abstractions;
 
-use \Able\Prototypes\IStringable;
-use \Able\Prototypes\TStringable;
-
 use \Throwable;
 use \Exception;
 
-abstract class AException extends Exception
-	implements IStringable {
-
-	use TStringable;
+abstract class AException extends Exception {
 
 	/**
 	 * @var string
@@ -49,13 +43,5 @@ abstract class AException extends Exception
 
 				return true;
 		}), preg_count('/%[^%]/', static::$template), '')), -1, $this->Previous);
-	}
-
-	/**
-	 * @return string
-	 * @throws Exception
-	 */
-	public final function toString(): string {
-		return parent::__toString();
 	}
 }
